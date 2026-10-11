@@ -1,0 +1,21 @@
+name: Notify web deploy
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: notify-web
+  cancel-in-progress: false
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch content-updated to prompt-hub-web
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.WEB_DISPATCH_TOKEN }}
+          repository: s1eepingpig/prompt-hub-web
+          event-type: content-updated
