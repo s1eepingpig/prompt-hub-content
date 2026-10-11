@@ -1,0 +1,15 @@
+id: prompt-agentic-guardrails
+type: prompt
+name: Agentic Safety Guardrails
+description: A system-prompt block that keeps an agent autonomous for reversible work and asks before destructive, hard-to-reverse or shared-system actions.
+version: 1.0.0
+author: community
+tags:
+  - agents
+  - safety
+  - system-prompt
+compatibility:
+  - claude-code
+  - chat
+license: MIT
+entry: PROMPT.md

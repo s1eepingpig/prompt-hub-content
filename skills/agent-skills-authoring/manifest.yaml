@@ -1,0 +1,15 @@
+id: skill-agent-skills-authoring
+type: skill
+name: Authoring Agent Skills
+description: Author and review SKILL.md files that Claude can discover and trigger. Covers frontmatter rules, naming, descriptions, progressive disclosure and workflows. Use when writing or improving an Agent Skill.
+version: 1.0.0
+author: community
+tags:
+  - skills
+  - agents
+  - authoring
+compatibility:
+  - claude-code
+  - chat
+license: MIT
+entry: SKILL.md

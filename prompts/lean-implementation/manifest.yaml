@@ -1,0 +1,15 @@
+id: prompt-lean-implementation
+type: prompt
+name: Lean Implementation
+description: A system-prompt block that stops a coding agent from over-engineering and from hard-coding solutions to pass tests.
+version: 1.0.0
+author: community
+tags:
+  - coding
+  - engineering
+  - system-prompt
+compatibility:
+  - claude-code
+  - chat
+license: MIT
+entry: PROMPT.md

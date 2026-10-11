@@ -1,0 +1,15 @@
+id: prompt-source-engine-portrait
+type: prompt
+name: Source-Engine Portrait Transfer
+description: Transform a portrait photo into original Source-engine (GoldSrc) low-poly game aesthetics while preserving the subject's identity. For Stable Diffusion and ComfyUI.
+version: 1.0.0
+author: community
+tags:
+  - image-gen
+  - style-transfer
+  - portrait
+compatibility:
+  - stable-diffusion
+  - comfyui
+license: MIT
+entry: PROMPT.md

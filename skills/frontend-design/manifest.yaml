@@ -1,0 +1,15 @@
+id: skill-frontend-design
+type: skill
+name: Frontend Design
+description: Design distinctive frontends that avoid the generic "AI slop" look. Guidance on typography, color, motion and backgrounds. Use when building or reviewing UI, landing pages or web components.
+version: 1.0.0
+author: community
+tags:
+  - frontend
+  - design
+  - ui
+compatibility:
+  - claude-code
+  - chat
+license: MIT
+entry: SKILL.md

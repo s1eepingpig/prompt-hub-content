@@ -1,0 +1,15 @@
+id: prompt-grounded-answers
+type: prompt
+name: Grounded Answers
+description: A system-prompt block that makes an agent read files before answering and research with competing hypotheses to cut hallucinations.
+version: 1.0.0
+author: community
+tags:
+  - research
+  - reasoning
+  - system-prompt
+compatibility:
+  - claude-code
+  - chat
+license: MIT
+entry: PROMPT.md

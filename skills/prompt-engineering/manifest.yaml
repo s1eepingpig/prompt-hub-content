@@ -1,0 +1,16 @@
+id: skill-prompt-engineering
+type: skill
+name: Prompt Engineering Playbook
+description: Diagnose and rewrite prompts using Claude's documented best practices — clarity, examples, XML structure, roles, long context and thinking. Use when improving, debugging or designing a prompt.
+version: 1.0.0
+author: community
+tags:
+  - prompting
+  - claude
+  - best-practices
+compatibility:
+  - claude-code
+  - chat
+license: MIT
+entry: SKILL.md
+featured: true
