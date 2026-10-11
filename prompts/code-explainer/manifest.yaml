@@ -1,0 +1,14 @@
+id: prompt-code-explainer
+type: prompt
+name: Code Explainer
+description: Explain a piece of code at a chosen depth — for a newcomer, a peer, or someone hunting a bug.
+version: 1.0.0
+author: community
+tags:
+  - coding
+  - education
+compatibility:
+  - claude-code
+  - chat
+license: MIT
+entry: PROMPT.md

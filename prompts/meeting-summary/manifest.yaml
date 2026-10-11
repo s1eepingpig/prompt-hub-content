@@ -1,0 +1,15 @@
+id: prompt-meeting-summary
+type: prompt
+name: Meeting Summary
+description: Turn a raw meeting transcript into decisions, action items with owners and open questions.
+version: 1.0.0
+author: community
+tags:
+  - productivity
+  - writing
+  - meetings
+compatibility:
+  - claude-code
+  - chat
+license: MIT
+entry: PROMPT.md

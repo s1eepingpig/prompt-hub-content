@@ -1,0 +1,14 @@
+id: plugin-git-workflow
+type: plugin
+name: Git Workflow Toolkit
+description: Opinionated git helpers — safe rebase, tidy branch names and a pre-push checklist — packaged as a single script.
+version: 0.9.0
+author: community
+tags:
+  - git
+  - workflow
+  - tooling
+compatibility:
+  - claude-code
+license: MIT
+entry: README.md

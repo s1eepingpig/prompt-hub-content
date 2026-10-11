@@ -1,0 +1,15 @@
+id: prompt-concise-writing
+type: prompt
+name: Concise Writing
+description: Tighten any draft into clear, direct prose by cutting filler, hedging and repetition without losing meaning.
+version: 1.0.0
+author: community
+tags:
+  - writing
+  - editing
+compatibility:
+  - claude-code
+  - chat
+license: MIT
+entry: PROMPT.md
+featured: true

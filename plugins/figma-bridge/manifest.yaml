@@ -1,0 +1,14 @@
+id: plugin-figma-bridge
+type: plugin
+name: Figma Bridge
+description: Export Figma design tokens to CSS custom properties and a Tailwind config, with a deterministic, reviewable output.
+version: 0.5.0
+author: community
+tags:
+  - design
+  - frontend
+  - tooling
+compatibility:
+  - claude-code
+license: MIT
+entry: README.md

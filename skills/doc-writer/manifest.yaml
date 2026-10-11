@@ -1,0 +1,13 @@
+id: skill-doc-writer
+type: skill
+name: Documentation Writer
+description: Draft and improve README files and API docs that are accurate, scannable and free of marketing filler.
+version: 1.0.1
+author: community
+tags:
+  - writing
+  - documentation
+compatibility:
+  - claude-code
+license: MIT
+entry: SKILL.md

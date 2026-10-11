@@ -1,0 +1,14 @@
+id: skill-sql-optimizer
+type: skill
+name: SQL Query Optimizer
+description: Rewrite slow SQL for clarity and performance, with index suggestions and an explanation of each change.
+version: 1.0.0
+author: community
+tags:
+  - database
+  - sql
+  - performance
+compatibility:
+  - claude-code
+license: MIT
+entry: SKILL.md

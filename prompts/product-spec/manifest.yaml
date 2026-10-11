@@ -1,0 +1,15 @@
+id: prompt-product-spec
+type: prompt
+name: Product Spec Writer
+description: Turn a vague feature idea into a one-page spec with scope, non-goals, user stories and open questions.
+version: 1.0.0
+author: community
+tags:
+  - product
+  - writing
+  - planning
+compatibility:
+  - claude-code
+  - chat
+license: MIT
+entry: PROMPT.md

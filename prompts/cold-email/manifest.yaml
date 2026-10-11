@@ -1,0 +1,15 @@
+id: prompt-cold-email
+type: prompt
+name: Cold Outreach Email
+description: Write a short, specific first-contact email that leads with the recipient's problem and ends with a low-friction ask.
+version: 1.0.0
+author: community
+tags:
+  - writing
+  - marketing
+  - email
+compatibility:
+  - claude-code
+  - chat
+license: MIT
+entry: PROMPT.md

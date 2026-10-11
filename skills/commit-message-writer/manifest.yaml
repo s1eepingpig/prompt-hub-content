@@ -1,0 +1,14 @@
+id: skill-commit-message-writer
+type: skill
+name: Commit Message Writer
+description: Turn a staged diff into a clear Conventional Commits message that explains the why, not just the what.
+version: 1.2.0
+author: community
+tags:
+  - git
+  - workflow
+  - writing
+compatibility:
+  - claude-code
+license: MIT
+entry: SKILL.md

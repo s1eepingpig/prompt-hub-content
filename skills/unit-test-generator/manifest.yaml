@@ -1,0 +1,14 @@
+id: skill-unit-test-generator
+type: skill
+name: Unit Test Generator
+description: Generate focused unit tests from a function's contract, covering boundaries and failure cases — not just the happy path.
+version: 1.1.0
+author: community
+tags:
+  - testing
+  - coding
+  - quality
+compatibility:
+  - claude-code
+license: MIT
+entry: SKILL.md

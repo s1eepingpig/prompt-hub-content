@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prompt-hub.dev/schemas/manifest.schema.json",
+  "title": "Prompt Hub Manifest",
+  "description": "Metadata manifest for a Skill, Prompt or Plugin published on Prompt Hub.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "type",
+    "name",
+    "description",
+    "version",
+    "author",
+    "tags",
+    "compatibility",
+    "license",
+    "entry"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Globally unique, stable id. Must equal '<type>-<directory>'. Lowercase kebab-case.",
+      "pattern": "^(skill|prompt|plugin)-[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "type": {
+      "description": "Content type. Must match the top-level directory it lives in.",
+      "enum": ["skill", "prompt", "plugin"]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "version": {
+      "type": "string",
+      "description": "SemVer, e.g. 1.0.0",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tags": {
+      "type": "array",
+      "description": "Controlled tags. Lowercase, deduplicated.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      }
+    },
+    "compatibility": {
+      "type": "array",
+      "description": "Supported tools / runtimes. Leave empty when unknown.",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "license": {
+      "type": "string",
+      "description": "Explicit license. Never assume MIT for unknown content.",
+      "minLength": 1
+    },
+    "entry": {
+      "type": "string",
+      "description": "Relative path to the primary file. Must exist and stay inside the content directory.",
+      "minLength": 1
+    },
+    "featured": {
+      "type": "boolean",
+      "description": "Manually curated featured flag. Do not infer popularity from this."
+    },
+    "media": {
+      "type": "array",
+      "description": "Optional media references. Records R2 object keys and metadata only — never image binaries.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "key"],
+        "properties": {
+          "kind": {
+            "enum": ["cover", "example", "icon", "diagram"]
+          },
+          "key": {
+            "type": "string",
+            "description": "R2 object key, e.g. content/<id>/v<version>/cover.webp",
+            "pattern": "^content/[a-z0-9-]+/v\\d+\\.\\d+\\.\\d+/[A-Za-z0-9._/-]+$"
+          },
+          "alt": { "type": "string" },
+          "width": { "type": "integer", "minimum": 1 },
+          "height": { "type": "integer", "minimum": 1 }
+        }
+      }
+    }
+  }
+}

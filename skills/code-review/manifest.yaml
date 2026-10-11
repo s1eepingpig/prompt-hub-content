@@ -1,0 +1,16 @@
+id: skill-code-review
+type: skill
+name: Code Review Assistant
+description: Review a diff or file for correctness, security and maintainability, returning prioritized, actionable feedback.
+version: 1.0.0
+author: community
+tags:
+  - coding
+  - code-review
+  - quality
+  - security
+compatibility:
+  - claude-code
+license: MIT
+entry: SKILL.md
+featured: true
